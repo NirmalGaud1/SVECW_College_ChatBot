@@ -4,7 +4,7 @@ import google.generativeai as genai
 
 # Load CSV from GitHub
 csv_url = "colege_details.csv"  # Replace with your CSV's raw URL
-df = pd.read_csv(csv_url)
+df = pd.read_csv(csv_url, encoding='ISO-8859-1')
 
 # Configure Gemini API
 API_KEY = "AIzaSyBsq5Kd5nJgx2fejR77NT8v5Lk3PK4gbH8"  # Replace with your Gemini API key
