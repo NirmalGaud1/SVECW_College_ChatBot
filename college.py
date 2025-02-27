@@ -3,10 +3,10 @@ import pandas as pd
 import google.generativeai as genai
 
 # Load CSV from GitHub (replace with your actual URL)
-csv_url = "colege_details.csv"
+csv_url = "college_faq.csv"
 
 try:
-    df = pd.read_csv(csv_url, encoding='ISO-8859-1')
+    df = pd.read_csv(csv_url)
 except Exception as e:
     st.error(f"Failed to load the CSV file. Error: {e}")
     st.stop()
