@@ -3,7 +3,7 @@ import pandas as pd
 import google.generativeai as genai
 
 # Load CSV from GitHub
-csv_url = "https://raw.githubusercontent.com/NirmalGaud1/SVECW_College_ChatBot/blob/main/colege_details.csv"  # Replace with your CSV's raw URL
+csv_url = "colege_details.csv"  # Replace with your CSV's raw URL
 df = pd.read_csv(csv_url)
 
 # Configure Gemini API
