@@ -6,7 +6,7 @@ import google.generativeai as genai
 csv_url = "colege_details.csv"
 
 try:
-    df = pd.read_csv(csv_url, encoding='utf-8')
+    df = pd.read_csv(csv_url,encoding='ISO-8859-1')
 except Exception as e:
     st.error(f"Failed to load the CSV file. Error: {e}")
     st.stop()
