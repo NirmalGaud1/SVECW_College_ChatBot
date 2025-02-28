@@ -35,7 +35,7 @@ st.markdown("""
 
 # Configure models
 genai.configure(api_key="AIzaSyBsq5Kd5nJgx2fejR77NT8v5Lk3PK4gbH8")
-gemini = genai.GenerativeModel('gemini-pro')
+gemini = genai.GenerativeModel('gemini-1.5-flash')
 embedder = SentenceTransformer('all-MiniLM-L6-v2')  # Embedding model
 
 # Load data and create FAISS index
