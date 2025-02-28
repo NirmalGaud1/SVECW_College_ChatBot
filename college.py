@@ -59,7 +59,7 @@ if prompt := st.chat_input("Type your question here..."):
     else:
         try:
             response = model.generate_content(
-                f"You are a helpful and knowledgeable chatbot for SVCEW College. Provide a detailed and specific answer to the following question: {prompt}"
+                f"You are a helpful and knowledgeable chatbot for SVCEW College. Provide a detailed answer to the following question: {prompt}"
             )
             st.session_state.messages.append({"role": "assistant", "content": response.text})
             with st.chat_message("assistant"):
